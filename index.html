@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles/style.css" rel="stylesheet" type="text/css">
+    <script src="../fuctions/function.js"></script>
+    <title>Te quiero -H</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/56c65c8514.js" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+    $(".no").hover(function(){
+        arriba =  Math.random() * (400 - 1) + 1;
+        abajo =  Math.random() * (609 - 1) + 1;
+        $(this).css("top", arriba);
+        $(this).css("left", abajo);
+        });
+    });
+    function dijoSi(){
+    document.getElementById("si").style.display = "block";
+}
+</script>
+<body>
+    <div class="contenedor">
+        <div class="titulo">
+            <h1>¿QUIERES SER MI NOVIO?</h1>
+        </div>
+        <div class="opciones">
+            <p class="no">NO</p>
+            <p onclick="dijoSi()" class="dijosi">SI</p>
+            <div id="si">    
+                    <i class="fas fa-heart"></i>
+                    <h2>Nah, mentiras solo te queria perdon por lo de ayer a mi si me gustaria tener una relacion contigo pero no quiero que te sientas presionado (Y cabe aclarar que es bien distinto a lo que dije pero si quiero eso). Disculpame creo que no dije las cosas como las sentia en verdad y solo espero que me entiendas :c</h2>
+                    <i class="fas fa-heart"></i>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
